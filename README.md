@@ -9,8 +9,9 @@ Changelog:
 - Black-Blue color theme background made little bit lighter
 - Roboto 2014 is default font
 - New APE media flag added
-- In slimlist view all rating stars are removed 
-- In slimlist view artist and album thumbs made smaller
-- In slimlist view set thumbs to hold their original aspect ratio
+- All rating stars are removed in music slimlist view
+- Artist and album thumbs are made smaller in slimlist view 
+- Thumbs are set to hold their original aspect ratio in music slimlist view
 - Rating stars are removed from music visualisation screen
 - Clock added to music visualisation screen
+- Thumbs are set to hold their original aspect ratio in music visualisation screen
