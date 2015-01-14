@@ -2464,7 +2464,7 @@
 				<control type="image">
 					<width>500</width>
 					<height>500</height>
-					<aspectratio aligny="center">keep</aspectratio>
+					<aspectratio aligny="center" align="right">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(files) | Container.Content(addons)] + !IsEmpty(ListItem.Thumb)</visible>
 					<fadetime>IconCrossfadeTime</fadetime>
@@ -2473,9 +2473,22 @@
 					<visible>Container.Content(albums)</visible>
 					<width>500</width>
 					<height>30</height>
+					<align>right</align>
+					<aligny>top</aligny>
 					<font>font14</font>
 					<textcolor>grey</textcolor>
-					<label>$INFO[ListItem.Year]$INFO[ListItem.Genre, • ]</label>
+					<label>$INFO[ListItem.Year]</label>
+				</control>
+				<control type="label">
+					<visible>Container.Content(albums)</visible>
+					<width>500</width>
+					<height>80</height>
+					<align>right</align>
+					<aligny>top</aligny>
+					<font>font14</font>
+					<textcolor>grey</textcolor>
+					<label>$INFO[ListItem.Genre]</label>
+					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="label">
 					<visible>Container.Content(artists)</visible>
@@ -2505,8 +2518,9 @@
 					<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					<label>$VAR[MusicPlotVar]</label>
 					<width>500</width>
-					<height>220</height>
-					<font>font14_textbox</font>
+					<height>180</height>
+					<font>font12_textbox</font>
+					<align>justify</align>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 					<include>ShowCaseInfoPanelButtonsValues</include>
 				</control>

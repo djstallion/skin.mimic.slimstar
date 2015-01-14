@@ -15,3 +15,4 @@ Changelog:
 - Rating stars are removed from music visualisation screen
 - Clock added to music visualisation screen
 - Thumbs are set to hold their original aspect ratio in music visualisation screen
+- Some other redesign in slimlist right panel
