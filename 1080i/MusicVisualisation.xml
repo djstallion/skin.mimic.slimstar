@@ -129,7 +129,7 @@
 				<width>400</width>
 				<height>45</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="themecolor" fallback="rating0.png">$INFO[Player.StarRating]</texture>
+				
 			</control>
 			<control type="image">
 				<left>1730</left>

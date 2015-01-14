@@ -2318,7 +2318,7 @@
 				<control type="list" id="50">
 					<left>90</left>
 					<top>105</top>
-					<width>1150</width>
+					<width>1210</width>
 					<height>840</height>
 					<onleft>SetProperty(MediaMenu,True,home)</onleft>
 					<onleft>SetFocus(9050)</onleft>
@@ -2328,10 +2328,10 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
-					<itemlayout height="60" width="1150" condition="Container.Content(albums) | Container.Content(songs)">
+					<itemlayout height="60" width="1210" condition="Container.Content(albums) | Container.Content(songs)">
 						<control type="label">
 							<left>20</left>
-							<width>1010</width>
+							<width>1130</width>
 							<height>60</height>
 							<font>font15</font>
 							<textcolor>grey</textcolor>
@@ -2341,7 +2341,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>230</left>
+							<left>290</left>
 							<width>900</width>
 							<height>60</height>
 							<font>font15</font>
@@ -2352,9 +2352,9 @@
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="60" width="1150" condition="Container.Content(albums) | Container.Content(songs)">
+					<focusedlayout height="60" width="1210" condition="Container.Content(albums) | Container.Content(songs)">
 						<control type="image">
-							<width>1150</width>
+							<width>1210</width>
 							<height>60</height>
 							<texture>listselect_fo.png</texture>
 							<colordiffuse>listselect</colordiffuse>
@@ -2363,7 +2363,7 @@
 						</control>	
 						<control type="label">
 							<left>20</left>
-							<width>1010</width>
+							<width>1130</width>
 							<height>60</height>
 							<font>font15</font>
 							<textcolor>white</textcolor>
@@ -2374,7 +2374,7 @@
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
 						</control>
 						<control type="label">
-							<left>230</left>
+							<left>290</left>
 							<width>900</width>
 							<height>60</height>
 							<font>font15</font>
@@ -2458,20 +2458,20 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<left>1276</left>
+				<left>1336</left>
 				<top>105</top>
 				<itemgap>15</itemgap>
 				<control type="image">
-					<width>560</width>
-					<height>560</height>
-					<aspectratio aligny="center">scale</aspectratio>
+					<width>500</width>
+					<height>500</height>
+					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(files) | Container.Content(addons)] + !IsEmpty(ListItem.Thumb)</visible>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
 				<control type="label">
 					<visible>Container.Content(albums)</visible>
-					<width>560</width>
+					<width>500</width>
 					<height>30</height>
 					<font>font14</font>
 					<textcolor>grey</textcolor>
@@ -2479,7 +2479,7 @@
 				</control>
 				<control type="label">
 					<visible>Container.Content(artists)</visible>
-					<width>560</width>
+					<width>500</width>
 					<height>30</height>
 					<font>font14</font>
 					<textcolor>grey</textcolor>
@@ -2487,7 +2487,7 @@
 				</control>
 				<control type="label">
 					<visible>Container.Content(songs)</visible>
-					<width>560</width>
+					<width>500</width>
 					<height>30</height>
 					<font>font14</font>
 					<textcolor>grey</textcolor>
@@ -2495,7 +2495,7 @@
 				</control>
 				<control type="label">
 					<visible>Container.Content(songs)</visible>
-					<width>560</width>
+					<width>500</width>
 					<height>30</height>
 					<font>font14</font>
 					<textcolor>grey</textcolor>
@@ -2504,7 +2504,7 @@
 				<control type="textbox">
 					<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					<label>$VAR[MusicPlotVar]</label>
-					<width>560</width>
+					<width>500</width>
 					<height>220</height>
 					<font>font14_textbox</font>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
@@ -2512,7 +2512,7 @@
 				</control>
 				<control type="textbox">
 					<visible>Container.Content(addons)</visible>
-					<width>560</width>
+					<width>500</width>
 					<height>275</height>
 					<font>font14_textbox5</font>
 					<textcolor>grey</textcolor>
