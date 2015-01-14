@@ -123,13 +123,15 @@
 				<texture>background.png</texture>
 				<colordiffuse>background</colordiffuse>
 			</control>
-			<control type="image">
-				<left>1590</left>
+			<control type="label">
+				<left>1800</left>
 				<top>25</top>
-				<width>400</width>
+				<width>90</width>
 				<height>45</height>
-				<aspectratio>keep</aspectratio>
-				
+				<font>font15_title</font>
+				<textcolor>grey</textcolor>
+				<align>right</align>
+				<label>$INFO[System.Time]</label>
 			</control>
 			<control type="image">
 				<left>1730</left>
@@ -224,7 +226,7 @@
 					<description>Cover image</description>
 					<width>280</width>
 					<height>280</height>
-					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
 				</control>
 			</control>

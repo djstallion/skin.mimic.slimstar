@@ -12,4 +12,5 @@ Changelog:
 - In slimlist view all rating stars are removed 
 - In slimlist view artist and album thumbs made smaller
 - In slimlist view set thumbs to hold their original aspect ratio
-- In music visualisation screen rating stars are removed
+- Rating stars are removed from music visualisation screen
+- Clock added to music visualisation screen
