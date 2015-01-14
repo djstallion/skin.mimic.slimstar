@@ -1,5 +1,5 @@
 # Mimic Slimstar
-Modified version of Mimic skin (Kodi 14 Helix skin)
+Modified version of Mimic skin (Kodi 14 Helix skin)<br />
 Original skin author: https://github.com/bryanbrazil
 
 Changelog:
