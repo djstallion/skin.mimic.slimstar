@@ -2331,7 +2331,7 @@
 					<itemlayout height="60" width="1150" condition="Container.Content(albums) | Container.Content(songs)">
 						<control type="label">
 							<left>20</left>
-							<width>830</width>
+							<width>1010</width>
 							<height>60</height>
 							<font>font15</font>
 							<textcolor>grey</textcolor>
@@ -2339,16 +2339,6 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
-						</control>
-						<control type="image">
-							<left>860</left>
-							<top>6</top>
-							<width>180</width>
-							<height>50</height>
-							<aspectratio align="right">keep</aspectratio>
-							<texture fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
-							<colordiffuse>themecolor</colordiffuse>
-							<visible>!IsEmpty(ListItem.Title) + Container.Content(songs)</visible>
 						</control>
 						<control type="label">
 							<left>230</left>
@@ -2373,7 +2363,7 @@
 						</control>	
 						<control type="label">
 							<left>20</left>
-							<width>830</width>
+							<width>1010</width>
 							<height>60</height>
 							<font>font15</font>
 							<textcolor>white</textcolor>
@@ -2382,15 +2372,6 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
-						</control>
-						<control type="image">
-							<left>860</left>
-							<top>6</top>
-							<width>180</width>
-							<height>50</height>
-							<aspectratio align="right">keep</aspectratio>
-							<texture colordiffuse="themecolor" fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
-							<visible>!IsEmpty(ListItem.Title) + Container.Content(songs)</visible>
 						</control>
 						<control type="label">
 							<left>230</left>
