@@ -1,12 +1,11 @@
 # Mimic Slimstar
-Modified version of Kodi 14 (Helix) Mimic skin
+Modified version of Kodi 14 (Helix) Mimic skin<br />
 Base skin author: https://github.com/bryanbrazil
 
 Changelog:
 
 **1.0.2.2** (15. jan 2015)
 - Skin base updated
-
 
 **1.0.2.1** (14. jan 2015)
 - Black-Blue is default color theme
