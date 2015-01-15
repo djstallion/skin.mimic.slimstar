@@ -12,6 +12,7 @@ Changelog:
 - Top bar labels are reorganized and restyled, total duration label added
 - Bottom bar labels are little bit reorganized and restyled
 - Music slim list view reorganized
+- All Black-color theme backgrounds made little bit lighter
 
 **1.0.2.1** (14. jan 2015)
 - Black-Blue is default color theme
