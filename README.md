@@ -8,8 +8,10 @@ Changelog:
 - Skin base update to version 1.0.3
 - Only list view is left, other views are removed (for pictures also icon view)
 - All star ratings are now removed from list views
+- Bottom bar labels improvement
 - Top bar labels are reorganized and restyled, total duration label added
 - Bottom bar labels are little bit reorganized and restyled
+- Music slim list view reorganized
 
 **1.0.2.1** (14. jan 2015)
 - Black-Blue is default color theme
