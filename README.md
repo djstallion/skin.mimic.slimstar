@@ -4,7 +4,7 @@ Base skin author: https://github.com/bryanbrazil
 
 Changelog:
 
-**1.0.2.2** (15. jan 2015)
+**1.0.3.1** (15. jan 2015)
 - Skin base updated
 
 **1.0.2.1** (14. jan 2015)
