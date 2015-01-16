@@ -7,6 +7,10 @@ Music slim list view:
 
 Changelog:
 
+**1.0.3.2** (16. jan 2015)
+- Base skin updates
+- Little improvements
+
 **1.0.3.1** (15. jan 2015)
 - Skin base update to version 1.0.3
 - Only list view is left, other views are removed (for pictures also icon view)

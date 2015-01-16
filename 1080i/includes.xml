@@ -4,26 +4,13 @@
 	<include file="Includes_CommonValues.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Home.xml" />
+	<include file="Includes_Widgets.xml" />
 	<include file="Includes_LiveBG.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
 	<include file="View_50_List.xml" />
-	<include file="View_51_InfoWall.xml" />
-	<include file="View_53_ShowCase.xml" />
-	<include file="View_54_ShowCase.xml" />
-	<include file="View_56_Posters.xml" />
-	<include file="View_57_Shift.xml" />
-	<include file="View_58_BannerWall.xml" />
-	<include file="View_59_Fanart.xml" />
 	<include file="View_500_Wall.xml" />
-	<include file="View_502_Episode.xml" />
-	<include file="View_504_Gallery.xml" />
-	<include file="View_505_Panel.xml" />
-	<include file="View_506_BannerInfo.xml" />
-	<include file="View_507_BigList.xml" />
-	<include file="View_508_SongList.xml" />
 	<include file="View_450_Favorites.xml" />
-	<include file="View_509_Wall.xml" />
 	<include file="variables.xml" />
 	<include file="script-skinshortcuts-includes.xml" />
 	<constant name="FanartCrossfadeTime">500</constant>
@@ -289,15 +276,16 @@
 					<textcolor>themecolor</textcolor>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>$INFO[Container.Totaltime,$LOCALIZE[31009][COLOR grey] ,[/COLOR]  •  ]$INFO[Container.NumItems,[COLOR grey],[/COLOR] $LOCALIZE[31025]]$INFO[Container.CurrentPage,  •  [COLOR grey],]$INFO[Container.NumPages,/,[/COLOR]  •  ]$INFO[System.Time,[COLOR grey],[/COLOR]]</label>
+					<label>$INFO[Container.Totaltime,$LOCALIZE[31009]: [COLOR grey],[/COLOR]  •  ]$INFO[Container.NumItems,[COLOR grey],[/COLOR] $LOCALIZE[31025]]$INFO[Container.CurrentPage,  •  ]$INFO[Container.NumPages,/,  •  ]$INFO[System.Time,[COLOR grey],[/COLOR]]</label>
 				</control>
 			</control>
+			
 		</control>
 	</include>
 	<include name="Bottombar">
 		<control type="group">
 			<top>1035</top>
-			<visible>!Control.IsVisible(509) + Player.HasAudio + !Skin.HasSetting(Disable.ShowPlayingMusic)</visible>
+			<visible>!Control.IsVisible(509) + Player.HasMedia + !Skin.HasSetting(Disable.ShowPlayingMusic)</visible>
 			<animation effect="slide" start="0,90" end="0,0" delay="800" time="480">WindowOpen</animation>
 			<animation effect="slide" end="0,90" start="0,0" time="480">WindowClose</animation>
 			<animation effect="slide" start="0,90" end="0,0" time="480" condition="!Control.HasFocus(60)">Conditional</animation>
@@ -311,27 +299,85 @@
 			</control>
 			<control type="group">
 				<top>-1</top>
-				<control type="label">
-					<width>1670</width>
-					<height>45</height>
-					<font>topbar</font>
-					<textoffsetx>15</textoffsetx>
-					<textcolor>themecolor</textcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31040]: [COLOR=grey]$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title][/COLOR]</label>
-					<scroll time="3000" delay="4000" repeat="5000">true</scroll>
-				</control>
-				<control type="label">
-					<left>1670</left>
-					<width>250</width>
-					<height>45</height>
-					<font>topbar</font>
-					<textoffsetx>15</textoffsetx>
-					<textcolor>grey</textcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]</label>
+				<control type="group">
+					<visible>Player.HasAudio</visible>
+					<control type="label">
+						<width>1550</width>
+						<height>45</height>
+						<font>topbar</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>themecolor</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31040]: [COLOR grey]$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title][/COLOR]</label>
+						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
+					</control>
+					<control type="label">
+						<left>1550</left>
+						<width>370</width>
+						<height>45</height>
+						<font>topbar</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]$INFO[MusicPlayer.PlaylistPosition,[COLOR themecolor]  •  ]/$INFO[MusicPlayer.PlaylistLength,,[/COLOR]]</label>
+					</control>
+ 				</control>
+				<control type="group">
+					<visible>Player.HasVideo</visible>
+					<control type="label">
+						<description>Movies</description>
+						<width>1300</width>
+						<height>45</height>
+						<font>topbar</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>[COLOR themecolor]$LOCALIZE[31040]:[/COLOR] $INFO[Player.Title]</label>
+						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
+						<visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
+					</control>
+					<control type="label">
+						<description>TV Shows</description>
+						<width>1300</width>
+						<height>45</height>
+						<font>topbar</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>[COLOR themecolor]$LOCALIZE[31040]:[/COLOR] $INFO[VideoPlayer.TVShowTitle] - $INFO[Player.Title]</label>
+						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
+						<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
+					</control>
+					<control type="label">
+						<description>Movies & TV Shows</description>
+						<left>1300</left>
+						<width>620</width>
+						<height>45</height>
+						<font>topbar</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.FinishTime]</label>
+						<visible>IsEmpty(VideoPlayer.EndTime)</visible>
+					</control>
+					<control type="label">
+						<description>Live TV</description>
+						<left>1300</left>
+						<width>620</width>
+						<height>45</height>
+						<font>topbar</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.EndTime]</label>
+						<visible>!IsEmpty(VideoPlayer.EndTime)</visible>
+					</control>
 				</control>
 			</control>
 		</control>
