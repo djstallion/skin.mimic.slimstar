@@ -3,7 +3,17 @@ Modified version of Kodi 14 (Helix) Mimic skin<br />
 Base skin author: https://github.com/bryanbrazil
 
 Music slim list view:
-![Home] (http://i.imgur.com/eoXryI2.jpg)
+![slim-list] (http://i.imgur.com/DQsT3Vr.png)
+
+Bottom bar "Now playing":
+![play] (http://i.imgur.com/9hheJx9.png)
+
+![pause] (http://i.imgur.com/2zLY3Kr.png)
+
+![forward] (http://i.imgur.com/y81VEWp.png)
+
+![rewind] (http://i.imgur.com/tCT95cl.png)
+
 
 Changelog:
 
