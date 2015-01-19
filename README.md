@@ -11,6 +11,7 @@ Changelog:
 - In bottom bar "Now playing" label replaced with playing status icon
 - Top and bottom bar height increased a little bit
 - Many slim list view alignment fixes
+- Disc number label added to music slim list view
 - Other alignment fixes
 - Base skin updates
 
