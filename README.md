@@ -7,6 +7,10 @@ Music slim list view:
 
 Changelog:
 
+**1.0.3.2** (19. jan 2015)
+- Base skin updates
+- Little fixes
+
 **1.0.3.2** (16. jan 2015)
 - Base skin updates
 - Little improvements

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.mimic.slimstar"
-  version="1.0.3.2"
+  version="1.0.3.3"
   name="Mimic SlimStar"
   provider-name="bryanbrazil, djstallion">
 	<requires>

@@ -39,7 +39,7 @@
 			<width>420</width>
 			<height>1080</height>
 			<texture>dialog_context.png</texture>
-			<colordiffuse>background</colordiffuse>
+			<colordiffuse>context</colordiffuse>
 		</control>
 		<control type="button" id="8999">
 			<description>Close Window button</description>
@@ -257,7 +257,7 @@
 			<control type="group">
 				<top>-2</top>
 				<control type="label">
-					<width>1030</width>
+					<width>990</width>
 					<height>45</height>
 					<font>topbar</font>
 					<textoffsetx>15</textoffsetx>
@@ -268,8 +268,8 @@
 				</control>
 				<control type="label">
 					<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
-					<left>1050</left>
-					<width>870</width>
+					<left>1010</left>
+					<width>910</width>
 					<height>45</height>
 					<font>topbar</font>
 					<textoffsetx>15</textoffsetx>
@@ -302,7 +302,7 @@
 				<control type="group">
 					<visible>Player.HasAudio</visible>
 					<control type="label">
-						<width>1550</width>
+						<width>1450</width>
 						<height>45</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>
@@ -313,8 +313,8 @@
 						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
 					</control>
 					<control type="label">
-						<left>1550</left>
-						<width>370</width>
+						<left>1470</left>
+						<width>450</width>
 						<height>45</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>

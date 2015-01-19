@@ -1,3 +1,7 @@
+[B]1.0.3.3[/B] (19. jan 2015)
+- Base skin updates
+- Little fixes
+
 [B]1.0.3.2[/B] (16. jan 2015)
 - Base skin updates
 - Little improvements

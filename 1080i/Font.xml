@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-	<fontset id="Default" idloc="31949">
+	<fontset id="Default" idloc="31390">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -238,7 +238,7 @@
 			<size>20</size>
 		</font>
 	</fontset>
-	<fontset id="WeblySleek UI" idloc="31390">
+	<fontset id="WeblySleek UI">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>

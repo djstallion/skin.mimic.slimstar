@@ -12,5 +12,6 @@
 	<color name="shadow">AA000000</color>
 	<color name="listselect">FF995b7e</color>
 	<color name="topbar">88c16d98</color>
-	<color name="background">FF2b2b2b</color>
+	<color name="background">FF292929</color>
+	<color name="context">FF995b7e</color>
 </colors>
