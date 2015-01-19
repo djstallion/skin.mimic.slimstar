@@ -1,10 +1,13 @@
 [B]1.0.3.3[/B] (19. jan 2015)
+- In bottom bar "Now playing" label replaced with playing status icon
+- Top and bottom bar height increased a little bit
+- Many slim list view alignment fixes
+- Other alignment fixes
 - Base skin updates
-- Little fixes
 
 [B]1.0.3.2[/B] (16. jan 2015)
 - Base skin updates
-- Little improvements
+- Small improvements
 
 [B]1.0.3.1[/B] (15. jan 2015)
 - Skin base update to version 1.0.3

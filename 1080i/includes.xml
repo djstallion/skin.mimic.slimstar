@@ -243,14 +243,14 @@
 			<control type="image">
 				<visible>!Control.IsVisible(59)</visible>
 				<width>1920</width>
-				<height>45</height>
+				<height>50</height>
 				<texture>background.png</texture>
 				<colordiffuse>topbar</colordiffuse>
 			</control>
 			<control type="image">
 				<visible>Control.IsVisible(59)</visible>
 				<width>1920</width>
-				<height>45</height>
+				<height>50</height>
 				<texture>background.png</texture>
 				<colordiffuse>background</colordiffuse>
 			</control>
@@ -258,7 +258,7 @@
 				<top>-2</top>
 				<control type="label">
 					<width>990</width>
-					<height>45</height>
+					<height>50</height>
 					<font>topbar</font>
 					<textoffsetx>15</textoffsetx>
 					<textcolor>themecolor</textcolor>
@@ -270,7 +270,7 @@
 					<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 					<left>1010</left>
 					<width>910</width>
-					<height>45</height>
+					<height>50</height>
 					<font>topbar</font>
 					<textoffsetx>15</textoffsetx>
 					<textcolor>themecolor</textcolor>
@@ -284,38 +284,104 @@
 	</include>
 	<include name="Bottombar">
 		<control type="group">
-			<top>1035</top>
+			<top>1030</top>
 			<visible>!Control.IsVisible(509) + Player.HasMedia + !Skin.HasSetting(Disable.ShowPlayingMusic)</visible>
 			<animation effect="slide" start="0,90" end="0,0" delay="800" time="480">WindowOpen</animation>
 			<animation effect="slide" end="0,90" start="0,0" time="480">WindowClose</animation>
-			<animation effect="slide" start="0,90" end="0,0" time="480" condition="!Control.HasFocus(60)">Conditional</animation>
-			<animation effect="slide" end="0,90" start="0,0" time="480" condition="Control.HasFocus(60)">Conditional</animation>
 			<control type="image">
 				<visible>!Control.IsVisible(59)</visible>
 				<width>1920</width>
-				<height>45</height>
+				<height>50</height>
 				<texture>background.png</texture>
 				<colordiffuse>topbar</colordiffuse>
 			</control>
 			<control type="group">
 				<top>-1</top>
 				<control type="group">
-					<visible>Player.HasAudio</visible>
-					<control type="label">
-						<width>1450</width>
-						<height>45</height>
-						<font>topbar</font>
-						<textoffsetx>15</textoffsetx>
+					<visible>Player.HasAudio | Player.HasVideo</visible>
+					<control type="button">
+						<visible>Player.Playing</visible>
+						<top>1</top>
+						<left>10</left>
+						<width>37</width>
+						<height>50</height>
+						<font>IconBarButton</font>
+						<textoffsetx>5</textoffsetx>
 						<textcolor>themecolor</textcolor>
+						<focusedcolor>grey</focusedcolor>
+						<texturefocus>false</texturefocus>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$LOCALIZE[31040]: [COLOR grey]$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title][/COLOR]</label>
+						<label></label>
+						<onclick>Pause</onclick>
+					</control>
+					<control type="button">
+						<visible>Player.Paused</visible>
+						<top>1</top>
+						<left>10</left>
+						<width>37</width>
+						<height>50</height>
+						<font>IconBarButton</font>
+						<textoffsetx>5</textoffsetx>
+						<textcolor>themecolor</textcolor>
+						<focusedcolor>grey</focusedcolor>
+						<texturefocus>false</texturefocus>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label></label>
+						<onclick>Play</onclick>
+					</control>
+					<control type="button">
+						<visible>Player.Forwarding | Player.Forwarding2x | Player.Forwarding4x | Player.Forwarding8x | Player.Forwarding16x | Player.Forwarding32x</visible>
+						<top>1</top>
+						<left>10</left>
+						<width>37</width>
+						<height>50</height>
+						<font>IconBarButton</font>
+						<textoffsetx>5</textoffsetx>
+						<textcolor>themecolor</textcolor>
+						<focusedcolor>grey</focusedcolor>
+						<texturefocus>false</texturefocus>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label></label>
+						<onclick>Play</onclick>
+					</control>
+					<control type="button">
+						<visible>Player.Rewinding | Player.Rewinding2x | Player.Rewinding4x | Player.Rewinding8x | Player.Rewinding16x | Player.Rewinding32x</visible>
+						<top>1</top>
+						<left>10</left>
+						<width>37</width>
+						<height>50</height>
+						<font>IconBarButton</font>
+						<textoffsetx>5</textoffsetx>
+						<textcolor>themecolor</textcolor>
+						<focusedcolor>grey</focusedcolor>
+						<texturefocus>false</texturefocus>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label></label>
+						<onclick>Play</onclick>
+					</control>
+				 </control>
+				<control type="group">
+					<visible>Player.HasAudio</visible>
+					<control type="label">
+						<left>40</left>
+						<width>1410</width>
+						<height>50</height>
+						<font>topbar</font>
+						<textoffsetx>15</textoffsetx>
+						<textcolor>grey</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
 						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
 					</control>
 					<control type="label">
 						<left>1470</left>
 						<width>450</width>
-						<height>45</height>
+						<height>50</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
@@ -328,27 +394,29 @@
 					<visible>Player.HasVideo</visible>
 					<control type="label">
 						<description>Movies</description>
-						<width>1300</width>
-						<height>45</height>
+						<left>40</left>
+						<width>1260</width>
+						<height>50</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[COLOR themecolor]$LOCALIZE[31040]:[/COLOR] $INFO[Player.Title]</label>
+						<label>$INFO[Player.Title]</label>
 						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
 						<visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
 					<control type="label">
 						<description>TV Shows</description>
-						<width>1300</width>
-						<height>45</height>
+						<left>40</left>
+						<width>1260</width>
+						<height>50</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[COLOR themecolor]$LOCALIZE[31040]:[/COLOR] $INFO[VideoPlayer.TVShowTitle] - $INFO[Player.Title]</label>
+						<label>$INFO[VideoPlayer.TVShowTitle] - $INFO[Player.Title]</label>
 						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
 						<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
@@ -356,7 +424,7 @@
 						<description>Movies & TV Shows</description>
 						<left>1300</left>
 						<width>620</width>
-						<height>45</height>
+						<height>50</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>
@@ -369,7 +437,7 @@
 						<description>Live TV</description>
 						<left>1300</left>
 						<width>620</width>
-						<height>45</height>
+						<height>50</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>
 						<textcolor>grey</textcolor>

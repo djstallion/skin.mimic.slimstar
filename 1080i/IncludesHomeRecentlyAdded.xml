@@ -422,7 +422,7 @@
 			</control>
 			<control type="grouplist">
 				<left>340</left>
-				<top>66</top>
+				<top>75</top>
 				<width>1530</width>
 				<height>460</height>
 				<itemgap>12</itemgap>
@@ -466,7 +466,7 @@
 			<control type="image">
 				<description>Cover image</description>
 				<left>35</left>
-				<top>70</top>
+				<top>80</top>
 				<width>269</width>
 				<height>269</height>
 				<aspectratio align="center" aligny="center">scale</aspectratio>

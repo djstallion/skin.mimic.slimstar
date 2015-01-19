@@ -937,9 +937,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1816</left>
-					<top>80</top>
+					<top>50</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>
@@ -1468,9 +1468,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1906</left>
-					<top>30</top>
+					<top>50</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>
@@ -1710,7 +1710,7 @@
 					<left>1816</left>
 					<top>105</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>
@@ -2024,9 +2024,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1816</left>
-					<top>80</top>
+					<top>50</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>
@@ -2246,9 +2246,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1906</left>
-					<top>30</top>
+					<top>50</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>
@@ -2309,11 +2309,11 @@
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
-			<animation effect="slide" end="0,15" start="0,0" condition="Container.Content(files) | Container.Content(addons)">Conditional</animation>
+			<animation effect="slide" end="0,15" start="0,0" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(files) | Container.Content(addons)">Conditional</animation>
 			<control type="group">
 				<control type="list" id="50">
 					<left>70</left>
-					<top>115</top>
+					<top>105</top>
 					<width>1230</width>
 					<height>840</height>
 					<onleft>SetProperty(MediaMenu,True,home)</onleft>
@@ -2443,9 +2443,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1906</left>
-					<top>45</top>
+					<top>35</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>
@@ -2455,38 +2455,43 @@
 			</control>
 			<control type="grouplist">
 				<left>1336</left>
-				<top>115</top>
+				<top>105</top>
 				<itemgap>25</itemgap>
 				<control type="image">
 					<width>500</width>
-					<height>530</height>
+					<height>500</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(files) | Container.Content(addons)] + !IsEmpty(ListItem.Thumb)</visible>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
+			</control>
+			<control type="grouplist">
+				<left>1336</left>
+				<top>620</top>
+				<itemgap>25</itemgap>
 				<control type="textbox">
 					<visible>Container.Content(artists)</visible>
 					<label>$VAR[MusicPlotVar]</label>
 					<width>500</width>
-					<height>287</height>
+					<height>320</height>
 					<font>font12_textbox</font>
 					<align>justify</align>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 					<include>ShowCaseInfoPanelButtonsValues</include>
 				</control>
 				<control type="label">
-					<visible>Container.Content(albums) | Container.Content(songs)</visible>
+					<visible>Container.Content(albums) | Container.Content(songs) | Container.Content(files)</visible>
 					<width>500</width>
 					<height>65</height>
 					<aligny>top</aligny>
 					<font>font14</font>
 					<textcolor>grey</textcolor>
 					<wrapmultiline>true</wrapmultiline>
-					<label>$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Album]</label>
+					<label>$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Album]$INFO[ListItem.DiscNumber,  •  CD ]</label>
 				</control>
 				<control type="label">
-					<visible>Container.Content(albums) | Container.Content(songs)</visible>
+					<visible>Container.Content(albums) | Container.Content(songs) | Container.Content(files)</visible>
 					<width>500</width>
 					<height>40</height>
 					<aligny>top</aligny>
@@ -2522,7 +2527,7 @@
 			<include>ViewAnimation</include>
 			<control type="group">
 				<control type="list" id="50">
-					<left>90</left>
+					<left>70</left>
 					<top>120</top>
 					<width>1150</width>
 					<height>840</height>
@@ -2596,9 +2601,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1906</left>
-					<top>45</top>
+					<top>50</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>
@@ -2701,9 +2706,9 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1906</left>
-					<top>45</top>
+					<top>50</top>
 					<width>14</width>
-					<height>1035</height>
+					<height>980</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
 					<onleft>50</onleft>

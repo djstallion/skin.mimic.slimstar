@@ -166,13 +166,13 @@
 			<control type="image">
 				<visible>Skin.HasSetting(Disable.HomeOverlay) + ![Player.HasMedia | Player.HasAudio]</visible>
 				<width>1920</width>
-				<height>45</height>
+				<height>50</height>
 				<texture>background.png</texture>
 				<colordiffuse>background</colordiffuse>
 			</control>
 			<control type="image">
 				<width>1920</width>
-				<height>45</height>
+				<height>50</height>
 				<texture>background.png</texture>
 				<colordiffuse>topbar</colordiffuse>
 			</control>
@@ -180,20 +180,20 @@
 				<left>0</left>
 				<top>-2</top>
 				<width>1905</width>
-				<height>45</height>
+				<height>50</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<orientation>horizontal</orientation>
 				<control type="label" id="9026">
 					<width>5</width>
-					<height>45</height>
+					<height>50</height>
 					<label>-</label>
 					<font>topbar</font>
 					<textcolor>themecolor</textcolor>
 				</control>
 				<control type="label" id="9023">
 					<width>auto</width>
-					<height>45</height>
+					<height>50</height>
 					<label>$INFO[Weather.Temperature,,  •  ]</label>
 					<font>topbar</font>
 					<textcolor>themecolor</textcolor>
@@ -201,7 +201,7 @@
 				</control>
 				<control type="label" id="9025">
 					<width>auto</width>
-					<height>45</height>
+					<height>50</height>
 					<label>$INFO[System.Date(DDD),[COLOR grey],[/COLOR]  •  ]$INFO[System.Date(d. MMM yyyy),,  •  ]$INFO[System.Time,[COLOR grey],[/COLOR]]</label>
 					<font>topbar</font>
 					<textcolor>themecolor</textcolor>
@@ -213,7 +213,7 @@
 					<left>15</left>
 					<top>-2</top>
 					<width>1600</width>
-					<height>45</height>
+					<height>50</height>
 					<label>$VAR[LibraryStatsVar]</label>
 					<aligny>center</aligny>
 					<font>topbar</font>

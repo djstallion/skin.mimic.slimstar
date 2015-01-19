@@ -223,6 +223,11 @@
 		</font>
 		<!-- Icons -->
 		<font>
+			<name>IconBarButton</name>
+			<filename>webhostinghub-glyphs.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
 			<name>IconSmall</name>
 			<filename>webhostinghub-glyphs.ttf</filename>
 			<size>30</size>
@@ -464,6 +469,11 @@
 		</font>
 		<!-- Icons -->
 		<font>
+			<name>IconBarButton</name>
+			<filename>webhostinghub-glyphs.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
 			<name>IconSmall</name>
 			<filename>webhostinghub-glyphs.ttf</filename>
 			<size>30</size>
@@ -702,6 +712,11 @@
 			<size>110</size>
 		</font>
 		<!-- Icons -->
+		<font>
+			<name>IconBarButton</name>
+			<filename>webhostinghub-glyphs.ttf</filename>
+			<size>26</size>
+		</font>
 		<font>
 			<name>IconSmall</name>
 			<filename>webhostinghub-glyphs.ttf</filename>

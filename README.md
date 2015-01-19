@@ -7,13 +7,16 @@ Music slim list view:
 
 Changelog:
 
-**1.0.3.2** (19. jan 2015)
+**1.0.3.3** (19. jan 2015)
+- In bottom bar "Now playing" label replaced with playing status icon
+- Top and bottom bar height increased a little bit
+- Many slim list view alignment fixes
+- Other alignment fixes
 - Base skin updates
-- Little fixes
 
 **1.0.3.2** (16. jan 2015)
 - Base skin updates
-- Little improvements
+- Small improvements
 
 **1.0.3.1** (15. jan 2015)
 - Skin base update to version 1.0.3
