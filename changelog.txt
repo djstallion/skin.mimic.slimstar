@@ -1,3 +1,6 @@
+[B]1.0.3.3[/B] (20. jan 2015)
+- List view and slim list view separated
+
 [B]1.0.3.3[/B] (19. jan 2015)
 - In bottom bar "Now playing" label replaced with playing status icon
 - Top and bottom bar height increased a little bit
