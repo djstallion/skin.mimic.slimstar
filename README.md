@@ -18,7 +18,7 @@ Bottom bar "Now playing":
 
 Changelog:
 
-**1.0.3.3** (20. jan 2015)
+**1.0.3.4** (20. jan 2015)
 - List view and slim list view separated
 
 **1.0.3.3** (19. jan 2015)

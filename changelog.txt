@@ -1,4 +1,4 @@
-[B]1.0.3.3[/B] (20. jan 2015)
+[B]1.0.3.4[/B] (20. jan 2015)
 - List view and slim list view separated
 
 [B]1.0.3.3[/B] (19. jan 2015)
