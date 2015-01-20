@@ -11,7 +11,7 @@
 				<control type="button">
 					<left>0</left>
 					<top>35</top>
-					<width>20</width>
+					<width>25</width>
 					<height>980</height>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -1049,7 +1049,7 @@
 			  	<control type="button">
 					<left>0</left>
 					<top>35</top>
-					<width>20</width>
+					<width>25</width>
 					<height>980</height>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -1583,7 +1583,7 @@
 				<control type="button">
 					<left>0</left>
 					<top>35</top>
-					<width>20</width>
+					<width>25</width>
 					<height>980</height>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -1783,7 +1783,7 @@
 				<control type="button">
 					<left>0</left>
 					<top>35</top>
-					<width>20</width>
+					<width>25</width>
 					<height>980</height>
 					<align>left</align>
 					<aligny>center</aligny>
