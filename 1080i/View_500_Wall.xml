@@ -6,6 +6,16 @@
 			<visible>Control.IsVisible(510) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
 			<top>-80</top>
+			<control type="button">
+				<left>0</left>
+				<top>35</top>
+				<width>20</width>
+				<height>980</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<texturefocus>false</texturefocus>
+				<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+			</control>
 			<control type="panel" id="510">
 				<left>120</left>
 				<top>155</top>

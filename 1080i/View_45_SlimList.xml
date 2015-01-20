@@ -6,6 +6,16 @@
 			<visible>Control.IsVisible(45) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
 			<control type="group">
+				<control type="button">
+					<left>0</left>
+					<top>35</top>
+					<width>20</width>
+					<height>980</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<texturefocus>false</texturefocus>
+					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+				</control>
 				<control type="list" id="45">
 					<left>90</left>
 					<top>105</top>
@@ -239,6 +249,16 @@
 			<include>ViewAnimation</include>
 			<animation effect="slide" end="0,15" start="0,0" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(files) | Container.Content(addons)">Conditional</animation>
 			<control type="group">
+				<control type="button">
+					<left>0</left>
+					<top>35</top>
+					<width>20</width>
+					<height>980</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<texturefocus>false</texturefocus>
+					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+				</control>
 				<control type="list" id="45">
 					<left>70</left>
 					<top>105</top>
@@ -454,6 +474,16 @@
 			<visible>Control.IsVisible(45) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
 			<control type="group">
+			  	<control type="button">
+					<left>0</left>
+					<top>35</top>
+					<width>20</width>
+					<height>980</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<texturefocus>false</texturefocus>
+					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+				</control>
 				<control type="list" id="45">
 					<left>70</left>
 					<top>120</top>
@@ -560,6 +590,16 @@
 			<visible>Control.IsVisible(45) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
 			<control type="group">
+			  	<control type="button">
+					<left>0</left>
+					<top>35</top>
+					<width>20</width>
+					<height>980</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<texturefocus>false</texturefocus>
+					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+				</control>
 				<control type="list" id="45">
 					<left>90</left>
 					<top>120</top>
