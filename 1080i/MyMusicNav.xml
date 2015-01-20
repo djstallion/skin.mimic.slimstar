@@ -5,7 +5,7 @@
 	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-	<views>50,51,54,57,59,500,504,507,508,505,509</views>
+	<views>45,50</views>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
@@ -15,29 +15,10 @@
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-			<include condition="!Skin.HasSetting(Enable.SlimList)">MusicList</include>
-			<include condition="Skin.HasSetting(Enable.SlimList)">SlimMusicList</include>
-			<!-- view id = 50 -->
-			<include>MusicInfoWall</include>
-			<!-- view id = 51 -->
-			<include>View_54_ShowCase</include>
-			<!-- view id = 54 -->
-			<include>AlbumShift</include>
-			<!-- view id = 57 -->
-			<include>View_59_Fanart</include>
-			<!-- view id = 59 -->
-			<include>MusicWall</include>
-			<!-- view id = 500 -->
-			<include>View_504_Gallery</include>
-			<!-- view id = 504 -->
-			<include>View_507_BigList</include>
-			<!-- view id = 507 -->
-			<include>View_508_SongList</include>
-			<!-- view id = 508 -->
-			<include>View_505_Panel</include>
-			<!-- view id = 505 -->
-			<include>View_509_Wall</include>
-			<!-- view id = 509 -->
+		<!--    <include condition="!Skin.HasSetting(Enable.SlimList)">MusicList</include>
+			<include condition="Skin.HasSetting(Enable.SlimList)">SlimMusicList</include> -->
+			<include>SlimMusicList</include><!-- view id = 45 -->
+			<include>MusicList</include><!-- view id = 50 -->
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(54) | Control.IsVisible(500) | Control.IsVisible(57)</visible>

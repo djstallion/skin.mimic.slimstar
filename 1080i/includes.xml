@@ -9,6 +9,7 @@
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
 	<include file="View_50_List.xml" />
+	<include file="View_45_SlimList.xml" />
 	<include file="View_500_Wall.xml" />
 	<include file="View_450_Favorites.xml" />
 	<include file="variables.xml" />
@@ -47,7 +48,7 @@
 			<top>0</top>
 			<width>64</width>
 			<height>48</height>
-			<label></label>
+			<label></label>
 			<font>CloseButton</font>
 			<textcolor>grey</textcolor>
 			<focusedcolor>themecolor</focusedcolor>
@@ -279,7 +280,6 @@
 					<label>$INFO[Container.Totaltime,$LOCALIZE[31009]: [COLOR grey],[/COLOR]  •  ]$INFO[Container.NumItems,[COLOR grey],[/COLOR] $LOCALIZE[31025]]$INFO[Container.CurrentPage,  •  ]$INFO[Container.NumPages,/,  •  ]$INFO[System.Time,[COLOR grey],[/COLOR]]</label>
 				</control>
 			</control>
-			
 		</control>
 	</include>
 	<include name="Bottombar">

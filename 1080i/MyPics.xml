@@ -5,18 +5,15 @@
 	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-	<views>50,510,504</views>
+	<views>45,50,510</views>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-			<include condition="!Skin.HasSetting(Enable.SlimList)">PictureList</include>
-			<include condition="Skin.HasSetting(Enable.SlimList)">SlimList</include>
-			<!-- view id = 50 -->
-			<include>PictureWall</include>
-			<!-- view id = 500 -->
-			<include>View_504_Gallery</include>
-			<!-- view id = 504 -->
+			<include>PictureList</include><!-- view id = 50 -->
+			<include>SlimList</include><!-- view id = 45 -->
+			<include>PictureWall</include><!-- view id = 500 -->
+
 		</control>
 		<include>ScrollOffsetLabel</include>
 		<include>Topbar</include>

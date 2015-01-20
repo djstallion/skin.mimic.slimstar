@@ -2,14 +2,13 @@
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50</views>
+	<views>45,50</views>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-			<include condition="!Skin.HasSetting(Enable.SlimList)">VideoList</include>
-			<include condition="Skin.HasSetting(Enable.SlimList)">SlimVideoList</include>
-			<!-- view id = 50 -->
+			<include>SlimVideoList</include><!-- view id = 45 -->
+			<include>VideoList</include><!-- view id = 50 -->
 		</control>
 		<include>ScrollOffsetLabel</include>
 		<include>Topbar</include>

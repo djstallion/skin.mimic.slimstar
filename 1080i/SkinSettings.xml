@@ -376,7 +376,7 @@
 						<label>31943</label>
 						<onclick>ActivateWindow(1127)</onclick>
 					</control>
-					<control type="button" id="405">
+				<!--    <control type="button" id="405">
 						<width>1316</width>
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
@@ -384,7 +384,7 @@
 						<label>31094</label>
 						<label2>$VAR[SlimListSettingVar]</label2>
 						<onclick>Skin.ToggleSetting(Enable.SlimList)</onclick>
-					</control>
+					</control> -->
 					<control type="button" id="406">
 						<width>1316</width>
 						<height>90</height>

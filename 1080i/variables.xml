@@ -293,10 +293,10 @@
 		<value condition="Skin.HasSetting(HorizontalListNav)">$LOCALIZE[31005]</value>
 		<value>$LOCALIZE[571]</value>
 	</variable>
-	<variable name="SlimListSettingVar">
+<!--    <variable name="SlimListSettingVar">
 		<value condition="Skin.HasSetting(Enable.SlimList)">$LOCALIZE[31095]</value>
 		<value>$LOCALIZE[571]</value>
-	</variable>
+	</variable> -->
 	<variable name="FavViewSettingVar">
 		<value condition="Skin.HasSetting(Enable.FavView)">$LOCALIZE[536]</value>
 		<value>$LOCALIZE[571]</value>
