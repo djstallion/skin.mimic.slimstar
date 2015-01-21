@@ -44,7 +44,7 @@
 			<colordiffuse>context</colordiffuse>
 			<onunfocus>ClearProperty(MediaMenu,Home)</onunfocus>
 		</control>
-		<!--<control type="button" id="8999">
+		<control type="button" id="8999">
 			<description>Close Window button</description>
 			<left>348</left>
 			<top>10</top>
@@ -65,7 +65,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<visible>system.getbool(input.enablemouse)</visible>
-		</control>-->
+		</control>
 		<control type="image">
 			<description>LOGO</description>
 			<left>0</left>
