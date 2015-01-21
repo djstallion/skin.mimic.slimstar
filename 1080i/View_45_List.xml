@@ -271,7 +271,6 @@
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
 					<itemlayout height="60" width="1230" condition="Container.Content(albums) | Container.Content(songs)">
-					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 						<control type="label">
 							<left>20</left>
 							<width>1150</width>
