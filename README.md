@@ -21,6 +21,7 @@ Changelog:
 **1.0.3.5** (21. jan 2015)
 - Mouse and touchscreen support for media menu added
 - Various fixes
+- Default background changed
 
 **1.0.3.4** (20. jan 2015)
 - List view and slim list view separated
