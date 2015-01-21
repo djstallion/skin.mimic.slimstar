@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<!-- Video List -->
-	<include name="VideoList">
+	<!-- Video Big List -->
+	<include name="VideoBigList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
@@ -9,14 +9,13 @@
 				<left>90</left>
 				<top>-50</top>
 				<control type="button">
-					<left>0</left>
-					<top>35</top>
-					<width>25</width>
-					<height>980</height>
-					<align>left</align>
-					<aligny>center</aligny>
+					<left>-90</left>
+					<top>150</top>
+					<width>30</width>
+					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 				</control>
 				<control type="list" id="50">
 					<left>0</left>
@@ -1039,26 +1038,25 @@
 			</control>
 		</control>
 	</include>
-	<!-- Music List -->
-	<include name="MusicList">
+	<!-- Music Big List -->
+	<include name="MusicBigList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
-			<animation effect="slide" start="0,0" end="0,15" time="720" tween="cubic" easing="inout" condition="Container.Content(files)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,0" time="720" tween="cubic" easing="inout" condition="Container.Content(files)">Conditional</animation>
 			<control type="group">
 			  	<control type="button">
 					<left>0</left>
-					<top>35</top>
-					<width>25</width>
-					<height>980</height>
-					<align>left</align>
-					<aligny>center</aligny>
+					<top>100</top>
+					<width>30</width>
+					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 				</control>
 				<control type="list" id="50">
 					<left>90</left>
-					<top>105</top>
+					<top>120</top>
 					<width>1150</width>
 					<height>840</height>
 					<onleft>SetProperty(MediaMenu,True,home)</onleft>
@@ -1500,7 +1498,7 @@
 			</control>
 			<control type="grouplist">
 				<left>1276</left>
-				<top>105</top>
+				<top>120</top>
 				<itemgap>15</itemgap>
 				<control type="image">
 					<width>560</width>
@@ -1572,8 +1570,8 @@
 			</control>
 		</control>
 	</include>
-	<!-- Addon List -->
-	<include name="AddonList">
+	<!-- Addon Big List -->
+	<include name="AddonBigList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
@@ -1581,14 +1579,13 @@
 				<left>90</left>
 				<top>-60</top>
 				<control type="button">
-					<left>0</left>
-					<top>35</top>
-					<width>25</width>
-					<height>980</height>
-					<align>left</align>
-					<aligny>center</aligny>
+					<left>-90</left>
+					<top>160</top>
+					<width>30</width>
+					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 				</control>
 				<control type="list" id="50">
 					<left>0</left>
@@ -1772,8 +1769,8 @@
 			</control>
 		</control>
 	</include>
-	<!-- Picture List -->
-	<include name="PictureList">
+	<!-- Picture Big List -->
+	<include name="PictureBigList">
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>ViewAnimation</include>
@@ -1781,14 +1778,13 @@
 				<left>90</left>
 				<top>-50</top>
 				<control type="button">
-					<left>0</left>
-					<top>35</top>
-					<width>25</width>
-					<height>980</height>
-					<align>left</align>
-					<aligny>center</aligny>
+					<left>-90</left>
+					<top>150</top>
+					<width>30</width>
+					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 				</control>
 				<control type="list" id="50">
 					<left>0</left>

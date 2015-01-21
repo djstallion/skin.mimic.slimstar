@@ -8,8 +8,8 @@
 	<include file="Includes_LiveBG.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
-	<include file="View_50_List.xml" />
-	<include file="View_45_SlimList.xml" />
+	<include file="View_45_List.xml" />
+	<include file="View_50_BigList.xml" />
 	<include file="View_500_Wall.xml" />
 	<include file="View_450_Favorites.xml" />
 	<include file="variables.xml" />
@@ -44,7 +44,7 @@
 			<colordiffuse>context</colordiffuse>
 			<onunfocus>ClearProperty(MediaMenu,Home)</onunfocus>
 		</control>
-		<control type="button" id="8999">
+		<!--<control type="button" id="8999">
 			<description>Close Window button</description>
 			<left>348</left>
 			<top>10</top>
@@ -65,7 +65,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<visible>system.getbool(input.enablemouse)</visible>
-		</control>
+		</control>-->
 		<control type="image">
 			<description>LOGO</description>
 			<left>0</left>

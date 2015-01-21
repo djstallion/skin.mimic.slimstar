@@ -8,13 +8,12 @@
 			<top>-80</top>
 			<control type="button">
 				<left>0</left>
-				<top>35</top>
-				<width>25</width>
-				<height>980</height>
-				<align>left</align>
-				<aligny>center</aligny>
+				<top>180</top>
+				<width>30</width>
+				<height>880</height>
 				<texturefocus>false</texturefocus>
 				<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+				<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 			</control>
 			<control type="panel" id="510">
 				<left>120</left>

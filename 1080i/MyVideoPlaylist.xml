@@ -7,8 +7,8 @@
 		<include>CommonBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-			<include>SlimVideoList</include><!-- view id = 45 -->
-			<include>VideoList</include><!-- view id = 50 -->
+			<include>VideoList</include><!-- view id = 45 -->
+			<include>VideoBigList</include><!-- view id = 50 -->
 		</control>
 		<include>ScrollOffsetLabel</include>
 		<include>Topbar</include>

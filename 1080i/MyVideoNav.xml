@@ -17,8 +17,8 @@
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-			<include>SlimVideoList</include><!-- view id = 45 -->
-			<include>VideoList</include><!-- view id = 50 -->
+			<include>VideoList</include><!-- view id = 45 -->
+			<include>VideoBigList</include><!-- view id = 50 -->
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(53) | Control.IsVisible(500) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58)</visible>

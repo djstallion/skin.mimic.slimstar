@@ -18,6 +18,9 @@ Bottom bar "Now playing":
 
 Changelog:
 
+**1.0.3.5** (21. jan 2015)
+- Mouse and touchscreen support for media menu added
+
 **1.0.3.4** (20. jan 2015)
 - List view and slim list view separated
 

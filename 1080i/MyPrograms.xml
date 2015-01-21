@@ -6,14 +6,13 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
 	<onunload>ClearProperty(Progams.Games,Home)</onunload>
-	<views>45,50,500</views>
+	<views>45,50</views>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-			<include>AddonList</include><!-- view id = 50 -->
-			<include>AddonSlimList</include><!-- view id = 45 -->
-			<include>AddonWall</include><!-- view id = 500 -->
+			<include>AddonList</include><!-- view id = 45 -->
+			<include>AddonBigList</include><!-- view id = 50 -->
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(500)</visible>

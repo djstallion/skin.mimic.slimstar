@@ -10,8 +10,8 @@
 		<include>CommonBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
-			<include>AddonSlimList</include><!-- view id = 45 -->
-			<include>AddonList</include><!-- view id = 50 -->
+			<include>AddonList</include><!-- view id = 45 -->
+			<include>AddonBigList</include><!-- view id = 50 -->
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(500)</visible>

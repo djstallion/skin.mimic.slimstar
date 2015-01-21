@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<!-- Slim VideoList-->
-	<include name="SlimVideoList">
+	<!-- VideoList-->
+	<include name="VideoList">
 		<control type="group">
 			<visible>Control.IsVisible(45) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
 			<control type="group">
-				<control type="button">
+			  	<control type="button">
 					<left>0</left>
-					<top>35</top>
-					<width>25</width>
-					<height>980</height>
-					<align>left</align>
-					<aligny>center</aligny>
+					<top>100</top>
+					<width>30</width>
+					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 				</control>
 				<control type="list" id="45">
 					<left>90</left>
@@ -242,26 +241,25 @@
 			</control>
 		</control>
 	</include>
-	<!-- Slim MusicList-->
-	<include name="SlimMusicList">
+	<!-- MusicList-->
+	<include name="MusicList">
 		<control type="group">
 			<visible>Control.IsVisible(45) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
-			<animation effect="slide" end="0,15" start="0,0" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(files) | Container.Content(addons)">Conditional</animation>
+			<animation effect="slide" end="0,0" start="0,0" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(files) | Container.Content(addons)">Conditional</animation>
 			<control type="group">
-				<control type="button">
+			  	<control type="button">
 					<left>0</left>
-					<top>35</top>
-					<width>25</width>
-					<height>980</height>
-					<align>left</align>
-					<aligny>center</aligny>
+					<top>100</top>
+					<width>30</width>
+					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 				</control>
 				<control type="list" id="45">
 					<left>70</left>
-					<top>105</top>
+					<top>115</top>
 					<width>1230</width>
 					<height>840</height>
 					<onleft>SetProperty(MediaMenu,True,home)</onleft>
@@ -273,6 +271,7 @@
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
 					<itemlayout height="60" width="1230" condition="Container.Content(albums) | Container.Content(songs)">
+					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 						<control type="label">
 							<left>20</left>
 							<width>1150</width>
@@ -403,7 +402,7 @@
 			</control>
 			<control type="grouplist">
 				<left>1336</left>
-				<top>105</top>
+				<top>115</top>
 				<itemgap>25</itemgap>
 				<control type="image">
 					<width>500</width>
@@ -468,21 +467,20 @@
 			</control>
 		</control>
 	</include>
-	<!-- Slim List-->
-	<include name="SlimList">
+	<!-- List-->
+	<include name="List">
 		<control type="group">
 			<visible>Control.IsVisible(45) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
 			<control type="group">
 			  	<control type="button">
 					<left>0</left>
-					<top>35</top>
-					<width>25</width>
-					<height>980</height>
-					<align>left</align>
-					<aligny>center</aligny>
+					<top>100</top>
+					<width>30</width>
+					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
 				</control>
 				<control type="list" id="45">
 					<left>70</left>
@@ -584,12 +582,21 @@
 			</control>
 		</control>
 	</include>
-	<!-- Slim AddonList-->
-	<include name="AddonSlimList">
+	<!-- AddonList-->
+	<include name="AddonList">
 		<control type="group">
 			<visible>Control.IsVisible(45) + !Window.IsActive(addoninformation)</visible>
 			<include>ViewAnimation</include>
 			<control type="group">
+			  	<control type="button">
+					<left>0</left>
+					<top>100</top>
+					<width>30</width>
+					<height>880</height>
+					<texturefocus>false</texturefocus>
+					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
+					<visible>IsEmpty(Window(home).Property(MediaMenu))</visible>
+				</control>
 				<control type="list" id="45">
 					<left>90</left>
 					<top>120</top>

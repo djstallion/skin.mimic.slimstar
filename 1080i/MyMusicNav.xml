@@ -17,8 +17,8 @@
 			<include>Window_OpenClose_Animation</include>
 		<!--    <include condition="!Skin.HasSetting(Enable.SlimList)">MusicList</include>
 			<include condition="Skin.HasSetting(Enable.SlimList)">SlimMusicList</include> -->
-			<include>SlimMusicList</include><!-- view id = 45 -->
-			<include>MusicList</include><!-- view id = 50 -->
+			<include>MusicList</include><!-- view id = 45 -->
+			<include>MusicBigList</include><!-- view id = 50 -->
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(54) | Control.IsVisible(500) | Control.IsVisible(57)</visible>
