@@ -9,7 +9,7 @@
 			  	<control type="button">
 					<left>0</left>
 					<top>100</top>
-					<width>30</width>
+					<width>25</width>
 					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
@@ -251,7 +251,7 @@
 			  	<control type="button">
 					<left>0</left>
 					<top>100</top>
-					<width>30</width>
+					<width>25</width>
 					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
@@ -414,7 +414,7 @@
 			</control>
 			<control type="grouplist">
 				<left>1336</left>
-				<top>620</top>
+				<top>635</top>
 				<itemgap>25</itemgap>
 				<control type="textbox">
 					<visible>Container.Content(artists)</visible>
@@ -475,7 +475,7 @@
 			  	<control type="button">
 					<left>0</left>
 					<top>100</top>
-					<width>30</width>
+					<width>25</width>
 					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
@@ -590,7 +590,7 @@
 			  	<control type="button">
 					<left>0</left>
 					<top>100</top>
-					<width>30</width>
+					<width>25</width>
 					<height>880</height>
 					<texturefocus>false</texturefocus>
 					<onfocus>SetProperty(MediaMenu,True,home)</onfocus>

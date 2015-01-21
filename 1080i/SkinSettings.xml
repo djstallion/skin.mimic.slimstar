@@ -376,7 +376,7 @@
 						<label>31943</label>
 						<onclick>ActivateWindow(1127)</onclick>
 					</control>
-				<!--    <control type="button" id="405">
+				<!--	<control type="button" id="405">
 						<width>1316</width>
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
@@ -393,6 +393,15 @@
 						<label>31929</label>
 						<label2>$VAR[FavViewSettingVar]</label2>
 						<onclick>Skin.ToggleSetting(Enable.FavView)</onclick>
+					</control>
+					<control type="radiobutton" id="500">
+						<width>1316</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Enable touchscreen buttons</label>
+						<onclick>Skin.ToggleSetting(TouchButtons.Enabled)</onclick>
+						<selected>!Skin.HasSetting(TouchButtons.Enabled) + System.Platform.Android | !Skin.HasSetting(TouchButtons.Enabled) + System.Platform.IOS</selected>
 					</control>
 				</control>
 			</control>

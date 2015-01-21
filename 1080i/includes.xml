@@ -64,7 +64,7 @@
 			<ondown>2</ondown>
 			<align>center</align>
 			<aligny>center</aligny>
-			<visible>system.getbool(input.enablemouse)</visible>
+			<visible>system.getbool(input.enablemouse) + Skin.HasSetting(TouchButtons.Enabled)</visible>
 		</control>
 		<control type="image">
 			<description>LOGO</description>

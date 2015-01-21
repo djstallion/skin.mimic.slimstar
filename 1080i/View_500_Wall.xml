@@ -9,7 +9,7 @@
 			<control type="button">
 				<left>0</left>
 				<top>180</top>
-				<width>30</width>
+				<width>25</width>
 				<height>880</height>
 				<texturefocus>false</texturefocus>
 				<onfocus>SetProperty(MediaMenu,True,home)</onfocus>
