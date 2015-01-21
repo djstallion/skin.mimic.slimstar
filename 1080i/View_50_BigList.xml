@@ -946,7 +946,7 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1816</left>
-					<top>50</top>
+					<top>100</top>
 					<width>14</width>
 					<height>980</height>
 					<onup>60</onup>
@@ -1735,7 +1735,7 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1816</left>
-					<top>105</top>
+					<top>110</top>
 					<width>14</width>
 					<height>980</height>
 					<onup>60</onup>
@@ -2060,7 +2060,7 @@
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1816</left>
-					<top>50</top>
+					<top>100</top>
 					<width>14</width>
 					<height>980</height>
 					<onup>60</onup>
