@@ -303,9 +303,9 @@
 					<visible>Player.HasAudio | Player.HasVideo</visible>
 					<control type="button">
 						<visible>Player.Playing</visible>
-						<top>1</top>
+						<top>0</top>
 						<left>10</left>
-						<width>37</width>
+						<width>44</width>
 						<height>50</height>
 						<font>IconBarButton</font>
 						<textoffsetx>5</textoffsetx>
@@ -319,9 +319,9 @@
 					</control>
 					<control type="button">
 						<visible>Player.Paused</visible>
-						<top>1</top>
+						<top>0</top>
 						<left>10</left>
-						<width>37</width>
+						<width>44</width>
 						<height>50</height>
 						<font>IconBarButton</font>
 						<textoffsetx>5</textoffsetx>
@@ -335,9 +335,9 @@
 					</control>
 					<control type="button">
 						<visible>Player.Forwarding | Player.Forwarding2x | Player.Forwarding4x | Player.Forwarding8x | Player.Forwarding16x | Player.Forwarding32x</visible>
-						<top>1</top>
+						<top>0</top>
 						<left>10</left>
-						<width>37</width>
+						<width>44</width>
 						<height>50</height>
 						<font>IconBarButton</font>
 						<textoffsetx>5</textoffsetx>
@@ -351,9 +351,9 @@
 					</control>
 					<control type="button">
 						<visible>Player.Rewinding | Player.Rewinding2x | Player.Rewinding4x | Player.Rewinding8x | Player.Rewinding16x | Player.Rewinding32x</visible>
-						<top>1</top>
+						<top>0</top>
 						<left>10</left>
-						<width>37</width>
+						<width>44</width>
 						<height>50</height>
 						<font>IconBarButton</font>
 						<textoffsetx>5</textoffsetx>
@@ -369,8 +369,8 @@
 				<control type="group">
 					<visible>Player.HasAudio</visible>
 					<control type="label">
-						<left>40</left>
-						<width>1410</width>
+						<left>45</left>
+						<width>1405</width>
 						<height>50</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>

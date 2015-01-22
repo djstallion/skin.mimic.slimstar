@@ -225,7 +225,7 @@
 		<font>
 			<name>IconBarButton</name>
 			<filename>webhostinghub-glyphs.ttf</filename>
-			<size>26</size>
+			<size>32</size>
 		</font>
 		<font>
 			<name>IconSmall</name>
@@ -471,7 +471,7 @@
 		<font>
 			<name>IconBarButton</name>
 			<filename>webhostinghub-glyphs.ttf</filename>
-			<size>26</size>
+			<size>32</size>
 		</font>
 		<font>
 			<name>IconSmall</name>
@@ -715,7 +715,7 @@
 		<font>
 			<name>IconBarButton</name>
 			<filename>webhostinghub-glyphs.ttf</filename>
-			<size>26</size>
+			<size>32</size>
 		</font>
 		<font>
 			<name>IconSmall</name>

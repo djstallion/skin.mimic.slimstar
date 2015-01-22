@@ -401,7 +401,7 @@
 						<font>font15</font>
 						<label>Enable touchscreen buttons</label>
 						<onclick>Skin.ToggleSetting(TouchButtons.Enabled)</onclick>
-						<selected>!Skin.HasSetting(TouchButtons.Enabled) + System.Platform.Android | !Skin.HasSetting(TouchButtons.Enabled) + System.Platform.IOS</selected>
+						<selected>Skin.HasSetting(TouchButtons.Enabled)</selected>
 					</control>
 				</control>
 			</control>
