@@ -18,6 +18,12 @@ Bottom bar "Now playing":
 
 Changelog:
 
+**1.0.3.6** (22. jan 2015)
+- Music and video progressbars are made active for touch and mouse control
+- Music player fullscreen controls reorganized
+- Added option to enable screen buttons for better touch and mouse control
+- Music info is always visible in fullscreen when screen buttons enabled
+
 **1.0.3.5** (21. jan 2015)
 - Mouse and touchscreen support for media menu added
 - Various fixes

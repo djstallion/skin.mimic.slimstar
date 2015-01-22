@@ -172,6 +172,14 @@
 				<height>37</height>
 				<info>Player.ProgressCache</info>
 			</control>
+			<control type="slider">
+				<left>287</left>
+				<top>334</top>
+				<width>1605</width>
+				<height>37</height>
+				<info>Player.ProgressCache</info>
+				<action>seek</action>
+			</control>
 			<control type="progress">
 				<left>287</left>
 				<top>334</top>
@@ -179,6 +187,14 @@
 				<height>37</height>
 				<info>Player.Progress</info>
 				<colordiffuse>background</colordiffuse>
+			</control>
+			<control type="slider">
+				<left>287</left>
+				<top>334</top>
+				<width>1605</width>
+				<height>37</height>
+				<info>Player.Progress</info>
+				<action>seek</action>
 			</control>
 			<control type="label">
 				<top>333</top>
