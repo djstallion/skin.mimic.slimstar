@@ -130,11 +130,7 @@
 					<onclick>PlayerControl(Repeat)</onclick>
 					<colordiffuse>grey</colordiffuse>
 				</control>
-				<control type="image" id="708">
-					<texture colordiffuse="grey">$VAR[MusicOSDRepeatButtonVar]</texture>
-					<width>100</width>
-					<height>64</height>
-				</control>
+				
 			</control>
 		</control>
 	</controls>

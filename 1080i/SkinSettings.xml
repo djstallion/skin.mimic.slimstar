@@ -399,9 +399,9 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
-						<label>Enable touchscreen buttons</label>
-						<onclick>Skin.ToggleSetting(TouchButtons.Enabled)</onclick>
-						<selected>Skin.HasSetting(TouchButtons.Enabled)</selected>
+						<label>Enable screen buttons</label>
+						<onclick>Skin.ToggleSetting(ScreenButtons.Enabled)</onclick>
+						<selected>Skin.HasSetting(ScreenButtons.Enabled)</selected>
 					</control>
 				</control>
 			</control>

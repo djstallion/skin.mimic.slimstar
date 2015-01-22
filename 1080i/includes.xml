@@ -64,7 +64,7 @@
 			<ondown>2</ondown>
 			<align>center</align>
 			<aligny>center</aligny>
-			<visible>system.getbool(input.enablemouse) + Skin.HasSetting(TouchButtons.Enabled)</visible>
+			<visible>Skin.HasSetting(ScreenButtons.Enabled)</visible>
 		</control>
 		<control type="image">
 			<description>LOGO</description>
@@ -501,5 +501,18 @@
 			<itemlayout/>
 			<content>plugin://service.library.data.provider?type=playliststats&amp;id=$INFO[Container(9000).ListItem.Property(Path)]</content>
 		</control>
+	</include>
+	<!-- Music visualisation player info dialog -->
+	<include name="Player.Showinfo.Top">
+		<top>740</top>
+	</include>
+	<include name="Player.Showinfo.Buttons.Top">
+		<top>675</top>
+	</include>
+	<include name="Player.Showinfo.Height">
+		<height>361</height>
+	</include>
+	<include name="Player.Showinfo.Buttons.Height">
+		<height>426</height>
 	</include>
 </includes>
