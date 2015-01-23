@@ -1,3 +1,7 @@
+[B]1.0.3.7[/B] (23. jan 2015)
+- "Home" button added (visible with activated screen buttons)
+- List view fix
+
 [B]1.0.3.6[/B] (22. jan 2015)
 - Music and video progressbars are made active for touch and mouse control
 - Music player fullscreen controls reorganized

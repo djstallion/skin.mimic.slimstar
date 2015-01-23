@@ -18,6 +18,10 @@ Bottom bar "Now playing":
 
 Changelog:
 
+**1.0.3.7** (23. jan 2015)
+- "Home" button added (visible with activated screen buttons)
+- List view fix
+
 **1.0.3.6** (22. jan 2015)
 - Music and video progressbars are made active for touch and mouse control
 - Music player fullscreen controls reorganized
