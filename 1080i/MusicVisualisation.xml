@@ -113,7 +113,7 @@
 			<left>0</left>
 			<include condition="![Skin.HasSetting(ScreenButtons.Enabled)]">Player.Showinfo.Top</include>
 			<include condition="Skin.HasSetting(ScreenButtons.Enabled)">Player.Showinfo.Buttons.Top</include>
-			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)]</visible>
+			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)] | Skin.HasSetting(ScreenButtons.Enabled)</visible>
 			<include>ViewAnimation</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
