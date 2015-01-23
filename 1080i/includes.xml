@@ -238,6 +238,14 @@
 		</control>
 	</include>
 	<!-- Navigation Bar -->
+	<include name="Breadcrumbs.Buttonless">
+		<left>0</left>
+		<width>990</width>
+	</include>
+	<include name="Breadcrumbs.Buttons">
+		<left>47</left>
+		<width>943</width>
+	</include>
 	<include name="Topbar">
 		<control type="group">
 			<visible>!Control.IsVisible(509)</visible>
@@ -258,9 +266,28 @@
 				<colordiffuse>background</colordiffuse>
 			</control>
 			<control type="group">
+			<visible>Skin.HasSetting(ScreenButtons.Enabled)</visible>
+				<control type="button">
+					<top>0</top>
+					<left>10</left>
+					<width>44</width>
+					<height>50</height>
+					<font>IconBarButton</font>
+					<textoffsetx>5</textoffsetx>
+					<textcolor>themecolor</textcolor>
+					<focusedcolor>grey</focusedcolor>
+					<texturefocus>false</texturefocus>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>↸</label>
+					<onclick>ActivateWindow(home)</onclick>
+				</control>
+			</control>
+			<control type="group">
 				<top>-2</top>
 				<control type="label">
-					<width>990</width>
+					<include condition="![Skin.HasSetting(ScreenButtons.Enabled)]">Breadcrumbs.Buttonless</include>
+					<include condition="Skin.HasSetting(ScreenButtons.Enabled)">Breadcrumbs.Buttons</include>
 					<height>50</height>
 					<font>topbar</font>
 					<textoffsetx>15</textoffsetx>
@@ -369,8 +396,8 @@
 				<control type="group">
 					<visible>Player.HasAudio</visible>
 					<control type="label">
-						<left>45</left>
-						<width>1405</width>
+						<left>47</left>
+						<width>1403</width>
 						<height>50</height>
 						<font>topbar</font>
 						<textoffsetx>15</textoffsetx>
