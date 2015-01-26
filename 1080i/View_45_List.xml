@@ -341,8 +341,8 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>50</left>
-							<width>1150</width>
+							<left>310</left>
+							<width>900</width>
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
@@ -374,8 +374,8 @@
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(45)">Conditional</animation>
 						</control>
 						<control type="label">
-							<left>50</left>
-							<width>1150</width>
+							<left>310</left>
+							<width>900</width>
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
