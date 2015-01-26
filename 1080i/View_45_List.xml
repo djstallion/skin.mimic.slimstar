@@ -67,7 +67,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white2">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="60" width="1150" condition="!Container.Content(addons)">

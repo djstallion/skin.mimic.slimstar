@@ -214,21 +214,21 @@
 		<control type="group">
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
 			<include>dialogeffect</include>
-			<left>1794</left>
-			<top>75</top>
+			<left>1790</left>
+			<top>50</top>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>160</width>
-				<height>160</height>
-				<texture>dialog_context.png</texture>
-				<colordiffuse>listselect</colordiffuse>
+				<width>130</width>
+				<height>130</height>
+				<texture>background.png</texture>
+				<colordiffuse>topbar</colordiffuse>
 			</control>
 			<control type="label">
-				<left>-10</left>
-				<top>15</top>
-				<width>160</width>
-				<height>120</height>
+				<left>0</left>
+				<top>-7</top>
+				<width>130</width>
+				<height>130</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.SortLetter]</label>
@@ -404,7 +404,7 @@
 						<textcolor>grey</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
+						<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Title]</label>
 						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
 					</control>
 					<control type="label">
@@ -416,7 +416,7 @@
 						<textcolor>grey</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]$INFO[MusicPlayer.PlaylistPosition,[COLOR themecolor]  •  ]/$INFO[MusicPlayer.PlaylistLength,,[/COLOR]]</label>
+						<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ,]$INFO[MusicPlayer.PlaylistPosition,[COLOR themecolor]  •  ]/$INFO[MusicPlayer.PlaylistLength,,[/COLOR]]</label>
 					</control>
  				</control>
 				<control type="group">
@@ -445,7 +445,7 @@
 						<textcolor>grey</textcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[VideoPlayer.TVShowTitle] - $INFO[Player.Title]</label>
+						<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[Player.Title]</label>
 						<scroll time="3000" delay="4000" repeat="5000">true</scroll>
 						<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
 					</control>
@@ -459,7 +459,7 @@
 						<textcolor>grey</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.FinishTime]</label>
+						<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ,][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.FinishTime]</label>
 						<visible>IsEmpty(VideoPlayer.EndTime)</visible>
 					</control>
 					<control type="label">
@@ -472,7 +472,7 @@
 						<textcolor>grey</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.EndTime]</label>
+						<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ,][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.EndTime]</label>
 						<visible>!IsEmpty(VideoPlayer.EndTime)</visible>
 					</control>
 				</control>

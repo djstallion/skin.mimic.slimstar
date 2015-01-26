@@ -118,7 +118,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white2">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="1150" condition="Container.Content(movies)">
@@ -221,7 +221,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</focusedlayout>
 					<itemlayout height="120" width="1150" condition="Container.Content(episodes)">
@@ -309,7 +309,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white2">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="1150" condition="Container.Content(episodes)">
@@ -411,7 +411,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</focusedlayout>
 					<itemlayout height="120" width="1150" condition="Container.Content(tvshows)">
@@ -465,7 +465,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white2">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="1150" condition="Container.Content(tvshows)">
@@ -531,7 +531,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</focusedlayout>
 					<itemlayout height="120" width="1150" condition="Container.Content(seasons)">
@@ -577,26 +577,13 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 						</control>
-						<control type="group">
-							<description>Unwatched episodes</description>
-							<left>1076</left>
-							<top>0</top>
-							<control type="image">
-								<left>0</left>
-								<top>28</top>
-								<width>64</width>
-								<height>64</height>
-								<texture>overlays/list/OverlayUnWatched.png</texture>
-								<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + IsEmpty(ListItem.Overlay)</visible>-->
-							</control>
-						</control>
 						<control type="image">
 							<left>1076</left>
 							<top>28</top>
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white2">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="1150" condition="Container.Content(seasons)">
@@ -653,26 +640,13 @@
 							<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
 						</control>
-						<control type="group">
-							<description>Unwatched episodes</description>
-							<left>1076</left>
-							<top>0</top>
-							<control type="image">
-								<left>0</left>
-								<top>28</top>
-								<width>64</width>
-								<height>64</height>
-								<texture>overlays/list/OverlayUnWatched.png</texture>
-								<!--<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + IsEmpty(ListItem.Overlay)</visible>-->
-							</control>
-						</control>
 						<control type="image">
 							<left>1076</left>
 							<top>28</top>
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</focusedlayout>
 					<itemlayout height="120" width="1150" condition="Container.Content(addons)">
@@ -865,7 +839,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white2">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="1150" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(addons) | Container.Content(seasons)]">
@@ -940,7 +914,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="white">$VAR[ListItem.Overlay]</texture>
 						</control>
 					</focusedlayout>
 				</control>
