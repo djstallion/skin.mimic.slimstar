@@ -459,7 +459,7 @@
 						<textcolor>grey</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ,][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.FinishTime]</label>
+						<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ,][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.FinishTime(hh:mm xx)]</label>
 						<visible>IsEmpty(VideoPlayer.EndTime)</visible>
 					</control>
 					<control type="label">
@@ -472,7 +472,7 @@
 						<textcolor>grey</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ,][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.EndTime]</label>
+						<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ,][COLOR themecolor]  •  $LOCALIZE[19127]:[/COLOR] $INFO[VideoPlayer.EndTime(hh:mm xx)]</label>
 						<visible>!IsEmpty(VideoPlayer.EndTime)</visible>
 					</control>
 				</control>
